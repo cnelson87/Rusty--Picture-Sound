@@ -1,0 +1,185 @@
+
+/*	-----------------------------------------------
+
+	iOS
+
+	----------------------------------------------- */
+
+/**
+*	iPad
+**/
+
+@media only screen and (max-device-width: 1024px) {
+	/*
+	html, body {
+		max-width: 1024px;
+	}
+	*/
+	#header, #footer, #content {
+		width: 1000px;
+	}
+}
+
+/*** /iPad ***/
+
+
+/**
+*	iPhone
+**/
+
+/*
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 640px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+*/
+@media only screen and (max-width: 480px) {
+
+	html, body, #wrapper {
+		max-width: 480px;
+	}
+
+	#header, #footer, #content {
+		min-width: 320px;
+		max-width: 480px;
+	}
+		#header .header-inner,
+		#footer .footer-inner,
+		#content .content-inner {
+			width: 280px;
+		}
+		#content .content-inner {
+			padding: 24px 0 80px 0;
+		}
+
+		#mainnav {}
+			#mainnav ul {
+				font-size: 20px;
+				line-height: 22px;
+			}
+			#mainnav li {
+				margin: 0 8px;
+			}
+
+	h1 {
+		font-size: 30px;
+		line-height: 34px;
+	}
+	h2, .h2 {
+		font-size: 24px;
+		line-height: 26px;
+		padding-top: 16px;
+	}
+	h3, .h3 {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	#content p {
+		padding: 0;
+	}
+
+	ul.inline-linklist {
+		font-size: 18px;
+		line-height: 20px;
+	}
+		ul.inline-linklist li {
+			display: block;
+			margin: 0 0 10px 0;
+		}
+
+	ul.thumbs-list {
+		list-style: none;
+		width: 306px;
+		margin: 0 -13px 20px -13px;
+	}
+		ul.thumbs-list li {
+			float: none;
+			display: block;
+			width: 306px;
+			height: 172px;
+			margin: 0 0 10px 0;
+		}
+
+	/* /hero-tabs */
+
+	div.hero-tabs {
+		width: 306px;
+		height: 172px;
+		border: 7px solid #fff;
+		margin: 0 -13px 20px -13px;
+	}
+		.hero-tabs .tab-panels {
+			width: 306px;
+			height: 172px;
+		}
+			.hero-tabs .tab-panels ul {
+				width: 306px;
+				height: 172px;
+			}
+			.hero-tabs .tab-panels li {
+				width: 306px;
+				height: 172px;
+			}
+				.hero-tabs .tab-panels img {
+					width: 306px;
+					height: 172px;
+				}
+		.hero-tabs .tab-nav {
+			width: 306px;
+			bottom: 20px;
+		}
+
+	/* /hero-tabs */
+
+	/* modalwindow */
+
+	div.modalwindow {
+		width: 306px;
+		padding: 7px;
+		position: absolute;
+	}
+		div.modalwindow div.modalwindow-content {
+			min-height: 2000px;
+			padding: 0;
+		}
+
+	/* /modalwindow */
+
+	/*** /modal-image ***/
+
+	div.modal-image {
+		width: 306px;
+		height: 172px;
+		padding: 7px;
+	}
+		div.modal-image div.modal-image-content {
+			width: 306px;
+			height: 172px;
+		}
+		div.modal-image div.modal-image-content img {
+			display: block;
+			width: 306px;
+			height: 172px;
+		}
+
+	/*** modal-image ***/
+
+	/*** /modal-iframe ***/
+
+	div.modal-iframe {
+		width: 306px;
+		height: 172px;
+		padding: 7px;
+	}
+		div.modal-iframe div.modaliframe-content {
+			width: 306px;
+			height: 172px;
+		}
+		div.modal-iframe div.modaliframe-content iframe {
+			width: 306px;
+			height: 172px;
+		}
+
+	/*** modal-iframe ***/
+
+}
+
+/*** /iPhone ***/

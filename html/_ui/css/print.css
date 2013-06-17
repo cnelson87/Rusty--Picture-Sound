@@ -1,0 +1,9 @@
+
+/***** PRINT CSS *****/
+
+body {
+    color: #010101;
+    background: #fff;
+}
+
+#header, #footer {display: none;}

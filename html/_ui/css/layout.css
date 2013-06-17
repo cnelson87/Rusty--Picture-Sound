@@ -1,0 +1,133 @@
+
+/*	-----------------------------------------------
+
+	global layout
+
+	----------------------------------------------- */
+
+div#wrapper {
+	/*
+	width: 960px;
+	margin: 0 auto;
+	*/
+	padding-top: 64px;
+}
+
+	div.skipnav {
+		position: absolute;
+		left: -999999px;
+	}
+
+
+/**
+*	header
+**/
+
+#header {
+	width: 100%;
+	min-width: 960px;
+	height: 150px;
+	background: #344245 url('../img/_chrome/bg-mast.jpg') repeat-x center top;
+}
+	#header .header-inner {
+		width: 960px;
+		height: 150px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+a#logo-picture-sound {
+	display: block;
+	text-indent: -9999px;
+	white-space: nowrap;
+	width: 288px;
+	height: 158px;
+	margin: 0 auto -54px auto;
+	position: relative;
+	top: -62px;
+	background: transparent url('../img/_chrome/logo-picture-sound.png') no-repeat 0 0;
+	overflow: hidden;
+}
+
+#mainnav {
+	margin: 0 auto;
+	position: relative;
+}
+	#mainnav ul {
+		list-style: none;
+		font-family: 'Fjalla One', Arial, sans-serif;
+		font-size: 22px;
+		line-height: 24px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	#mainnav li {
+		display: inline;
+		margin: 0 12px;
+	}
+	#mainnav a {
+		color: #efefef;
+	}
+	#mainnav a.current, #mainnav a:focus, #mainnav a:hover {
+		color: #9ad5e5;
+	}
+
+/*** /header ***/
+
+
+/**
+*	footer
+**/
+
+#footer {
+	width: 100%;
+	min-width: 960px;
+	height: 150px;
+	background: #344245 url('../img/_chrome/bg-mast.jpg') repeat-x center top;
+}
+	#footer .footer-inner {
+		width: 960px;
+		min-height: 85px;
+		margin: 0 auto;
+		padding-top: 65px;
+		position: relative;
+	}
+
+	#footer p {
+		color: #b2b5b3;
+		font-family: Arial, Verdana, sans-serif;
+		margin: 0;
+	}
+
+/*** /footer ***/
+
+
+/**
+*	content
+**/
+
+#content {
+	width: 100%;
+	min-width: 960px;
+}
+	#content .content-inner {
+		width: 960px;
+		min-height: 240px;
+		margin: 0 auto;
+		padding: 24px 0 160px 0;
+		position: relative;
+	}
+
+	#content p {
+		padding: 0 120px;
+	}
+
+/*** /content ***/
+
+
+/**
+*	misc
+**/
+
+
+/*** /misc ***/

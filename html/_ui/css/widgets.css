@@ -1,0 +1,226 @@
+
+/*	-----------------------------------------------
+
+	JS widgets
+
+	----------------------------------------------- */
+
+
+.template {display: none;}
+
+
+/**
+*	ajax overlay & spinner
+**/
+
+div.overlay {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.7;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+div.spinner {
+	width: 100%;
+	height: 100%;
+	background: transparent url('../img/_chrome/spinner.gif') no-repeat center center;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*** /ajax overlay & spinner ***/
+
+
+/**
+*	hero-tabs
+**/
+
+div.hero-tabs {
+	width: 930px;
+	height: 510px;
+	background: #000;
+	border: 15px solid #fff;
+	margin: 0 0 20px 0;
+	position: relative;
+}
+	.hero-tabs .tab-panels {
+		width: 930px;
+		height: 510px;
+		position: relative;
+	}
+		.hero-tabs .tab-panels ul {
+			list-style: none;
+			width: 930px;
+			height: 510px;
+			margin: 0;
+			overflow: hidden;
+			position: relative;
+		}
+		.hero-tabs .tab-panels li {
+			width: 930px;
+			height: 510px;
+			margin: 0;
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: none;
+		}
+		.hero-tabs .tab-panels li:first-child,
+		body.js-enabled .hero-tabs .tab-panels li {
+			display: block;
+		}
+			.hero-tabs .tab-panels img {
+				display: block;
+				width: 930px;
+				height: 510px;
+			}
+
+	.hero-tabs .tab-nav {
+		width: 930px;
+		position: absolute;
+		bottom: 30px;
+	}
+		.hero-tabs .tab-nav ul {
+			list-style: none;
+			margin: 0;
+		}
+		.hero-tabs .tab-nav li {
+			display: inline-block;
+			margin: 0 6px;
+		}
+		.hero-tabs .tab-nav a {
+			display: block;
+			color: #efefef;
+		}
+		.hero-tabs .tab-nav li.active a,
+		.hero-tabs .tab-nav a:hover {
+			color: #fff;
+			position: relative;
+			top: 1px;
+			-webkit-transform: scale(1.2);
+			   -moz-transform: scale(1.2);
+			    -ms-transform: scale(1.2);
+			     -o-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+
+/*** /hero-tabs ***/
+
+
+/**
+*	modalwindow
+**/
+
+div.modalspinner {
+	width: 100%;
+	height: 100%;
+	background: transparent url('../img/_chrome/spinner.gif') no-repeat center center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9;
+}
+
+div#modaloverlay {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.7;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 8;
+	display: none;
+}
+div#modaloverlay.active {
+	display: block;
+}
+
+div#spinner {
+	position: absolute;
+	z-index: 9;
+	top: 0px;
+	left: 50%;
+	/*
+	width: 400px;
+	height: 400px;
+	*/
+	background: transparent url('../img/_chrome/spinner.gif') no-repeat center center;
+	display: none;
+}
+
+div.modalwindow {
+	width: 930px;
+	height: 510px;
+	background: #fff;
+	padding: 15px;
+	position: absolute;
+	z-index: 10;
+	font-size: 1.4em; /* 62.5% x 1.4em = 14px base font size */
+}
+	.modalwindow .modalwindow-content {
+		width: 930px;
+		height: 510px;
+	}
+	.modalwindow a.btn-closeX,
+	.modalwindow a.lnk-closeX {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+
+/*** /modalwindow ***/
+
+/*** /modal-image ***/
+
+div.modal-image {
+	width: 930px;
+	height: 510px;
+	background: #fff;
+	padding: 15px;
+	position: absolute;
+	z-index: 10;
+}
+	.modal-image .modal-image-content {
+		width: 930px;
+		height: 510px;
+	}
+	.modal-image .modal-image-content img {
+		display: block;
+		width: 930px;
+		height: 510px;
+	}
+	.modal-image a.btn-closeX,
+	.modal-image a.lnk-closeX {
+		display: none;
+	}
+
+/*** modal-image ***/
+
+/*** /modal-video ***/
+
+div.modal-video {
+	width: 930px;
+	height: 510px;
+	background: #fff;
+	padding: 15px;
+	position: absolute;
+	z-index: 10;
+}
+	.modal-video .modal-video-content {
+		width: 930px;
+		height: 510px;
+	}
+	.modal-video .modal-video-content iframe {
+		width: 930px;
+		height: 510px;
+	}
+	.modal-video a.btn-closeX,
+	.modal-video a.lnk-closeX {
+		display: none;
+	}
+
+/*** modal-video ***/

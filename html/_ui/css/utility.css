@@ -1,0 +1,242 @@
+
+/*	-----------------------------------------------
+
+	utility classes & styles
+
+	----------------------------------------------- */
+
+/**
+*	general styles
+**/
+
+html.no-js .hide-no-js {display: none;}
+html.js-enabled .hide-js-enabled {display: none;}
+
+big, .big {font-size: 16px;}
+
+small, .small, .note {font-size: 10px;}
+
+.alert, .error, .important, .required {
+	color: #900;
+	font-weight: bold;
+}
+
+.offscreen {
+	position: fixed;
+	left: -9999px;
+}
+
+.clear {
+	clear: both;
+}
+
+div.hr {
+	clear: both;
+	height: 1px;
+	border-top: 5px solid #010101;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+}
+	div.hr hr {
+		display: none;
+	}
+
+.floatright {float: right;}
+
+.floatleft {float: left;}
+
+.hidden {visibility: hidden;}
+
+.nowrap {white-space: nowrap;}
+
+.normal {
+	font-weight: normal;
+	text-transform: none;
+}
+
+.first-line {font-size: 16px;}
+
+.small {font-size: 10px;}
+
+.lower {text-transform: lowercase;}
+
+.underline {text-decoration: underline;}
+
+.strike {text-decoration: line-through;}
+
+.align-left {text-align: left;}
+
+.align-right {text-align: right;}
+
+.align-center {text-align: center;}
+
+p.intro {
+	font-size: 20px;
+	font-style: italic;
+	line-height: 26px;
+	margin: 0 0 20px 0;
+}
+
+p.footnote {
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0 0 16px 0;
+}
+
+/*** /general styles ***/
+
+
+/**
+*	list styles
+**/
+
+ul.disc-list {list-style-type: disc;}
+ul.circle-list {list-style-type: circle;}
+ul.square-list {list-style-type: square;}
+ol.numbered-list {list-style: decimal;}
+ol.lower-alpha {list-style: lower-alpha;}
+ol.upper-alpha {list-style: upper-alpha;}
+ol.lower-roman {list-style: lower-roman;}
+ol.upper-roman {list-style: upper-roman;}
+
+ul.plain-list, ol.plain-list {
+	list-style: none;
+}
+	ul.plain-list li, ol.plain-list li {
+		margin: 0 0 8px 0;
+	}
+
+ul.inline-linklist {
+	list-style: none;
+	font-family: 'Fjalla One', Arial, sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+	ul.inline-linklist li {
+		display: inline;
+		margin: 0 8px;
+	}
+
+.sub-p {
+	/* element below p tag */
+	margin-top: -12px;
+}
+
+/*** /list styles ***/
+
+
+/**
+*	img styles
+**/
+
+img.block {
+	display: block;
+	margin: 0 0 1.0em 0;
+}
+
+img.inline {
+	display: inline;
+	margin: 0 0.2em;
+	vertical-align: bottom;
+}
+
+img.inset-left {
+	float: left;
+	display: inline;
+	margin: 0 20px 1.0em 0;
+	border: 1px solid #ccc;
+}
+
+img.inset-right {
+	float: right;
+	display: inline;
+	margin: 0 0 1.0em 20px;
+	border: 1px solid #ccc;
+}
+
+/*** /img styles ***/
+
+
+/**
+*	link styles
+**/
+
+a.play-btn {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background: transparent url('../img/_chrome/play-btn.png') no-repeat center center;
+	text-decoration: none;
+}
+a.video-trigger,
+a.modal-video-trigger {
+	display: block;
+	position: relative;
+}
+	a.video-trigger:after,
+	a.modal-video-trigger:after {
+		content: "";
+		display: block;
+		opacity: .8;
+		width: 100%;
+		height: 100%;
+		background: transparent url('../img/_chrome/play-btn.png') no-repeat center center;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	a.video-trigger:hover:after,
+	a.modal-video-trigger:hover:after {
+		opacity: 1;
+	}
+
+a.btn-closeX, a.lnk-closeX {
+	display: inline-block;
+	padding: 8px;
+	background: #900;
+	border: 2px solid #333;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a.btn-closeX:focus, a.btn-closeX:hover,
+a.lnk-closeX:focus, a.lnk-closeX:hover {
+	background: #c00;
+}
+
+/*** /link styles ***/
+
+
+/**
+*	misc styles
+**/
+
+ul.thumbs-list {
+	list-style: none;
+	width: 978px;
+	margin: 0 -9px 36px -9px;
+}
+	ul.thumbs-list li {
+		float: left;
+		width: 292px;
+		height: 158px;
+		border: 7px solid #fff;
+		margin: 0 10px 20px 10px;
+	}
+	ul.thumbs-list a {
+		display: block;
+		width: 292px;
+		height: 158px;
+	}
+	ul.thumbs-list img {
+		display: block;
+		width: 292px;
+		height: 158px;
+		position: relative;
+	}
+
+/*** /misc styles ***/
