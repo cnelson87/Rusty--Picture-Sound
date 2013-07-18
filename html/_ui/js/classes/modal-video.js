@@ -28,13 +28,23 @@ CNJS.UI.ModalVideo = CNJS.UI.ModalWindow.extend({
 		this.options = $.extend({
 			modalID: 'modalvideo',
 			modalClass: 'modal-video',
-			iframeID: 'youtubeplayer',
-			iframeClass: 'youtube-player',
+			iframeID: 'videoplayer',
+			iframeClass: 'video-player',
+			videoService: CNJS.Config.videoService,
 			customEventPrfx: 'CNJS:UI:ModalVideo'
 		}, objOptions || {});
 
 		// setup & properties
 		this.videoID = null;
+		switch (this.options.videoService) {
+			case "youtube":
+				this.iframeSrc = '//www.youtube.com/embed/';
+				break;
+			case "vimeo":
+				this.iframeSrc = '//player.vimeo.com/video/';
+				break;
+		}
+
 
 		this._super(this.elTriggers, this.options);
 
@@ -65,9 +75,9 @@ CNJS.UI.ModalVideo = CNJS.UI.ModalWindow.extend({
 **/
 	getContent: function() {
 		var self = this;
-		var iframeSrc = '//www.youtube.com/embed/' + this.videoID;
+		var iframeSrc = this.iframeSrc + this.videoID;
 
-		this.contentHTML = '<iframe id="' + this.options.iframeID + '" class="' + this.options.iframeClass + '" src="' + iframeSrc + '" frameborder="0" scrolling="no"></iframe>';
+		this.contentHTML = '<iframe id="' + this.options.iframeID + '" class="' + this.options.iframeClass + '" src="' + iframeSrc + '" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 
 		this.setContent();
 
